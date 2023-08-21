@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop work</title>
+    <style>
+        #one,
+        #two,
+        #Three,
+        #Four {
+            height: 60px;
+            width: 70px;
+            margin: 40px;
+        }
+
+        .all {
+            display: flex;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-transform: uppercase;">Shown the list WhatEver you selected</h1>
+
+
+    Select One Option from the list.:
+    <select class="ice-cream" name="xyz" onchange="showDiv(this);">
+        <option value="None">Select One …</option>
+        <option value="1">1st</option>
+        <option value="2">2nd</option>
+        <option value="3">3rd</option>
+        <option value="4">4rd</option>
+    </select>
+
+
+    <div class="all">
+        <div class="result" class="box" id="1" style="display: none; background-color: orangered; ">one</div>
+        <div class="result" class="box" id="2" style="display: none; background-color: greenyellow;">two</div>
+        <div class="result" class="box" id="3" style="display: none; background-color: palevioletred;">Three</div>
+        <div class="result" class="box" id="4" style="display: none; background-color: lightsalmon;">Four</div>
+    </div>
+    <script>
+
+        function showDiv(param) {
+            let text = param.value;
+            for (let i = 0; i <= 4; i++) {
+                if (val.id.value == i) {      
+                    document.getElementById("one").style.display = "block";   
+                                     
+                 } 
+                // else if (text == i){
+                //     document.getElementById("two").style.display = "block";
+                // }
+                // else{
+                //     document.getElementById("Three").style.display = "block";
+
+                 }
+            }
+           
+
+
+            // for (let i = 4; i <=0; i--) {
+            // //   text += i ;
+            // function showDiv(param) {
+            //     if (val == 'i') {
+            //         document.getElementById('one');
+            //     }
+
+            // }
+            // break;
+
+        
+
+//   function showDiv(param){
+
+//     let val = param.value;
+//     if(val == 'None'){
+//       document.getElementById('one').style.display = 'none';
+//       document.getElementById('two').style.display = 'none';
+//       document.getElementById('Three').style.display = 'none';
+//       document.getElementById('Four').style.display = 'none';
+//     }
+//     if(val == '1'){
+//       document.getElementById('one').style.display = 'block';
+//       document.getElementById('two').style.display = 'none';
+//       document.getElementById('Three').style.display = 'none';
+//       document.getElementById('Four').style.display = 'none';
+//     }
+//     if(val == '2'){
+//       document.getElementById('one').style.display = 'block';
+//       document.getElementById('two').style.display = 'block';
+//       document.getElementById('Three').style.display = 'none';
+//       document.getElementById('Four').style.display = 'none';
+//     }
+//     if(val == '3'){
+//       document.getElementById('one').style.display = 'block';
+//       document.getElementById('two').style.display = 'block';
+//       document.getElementById('Three').style.display = 'block';
+//       document.getElementById('Four').style.display = 'none';
+//     }
+//     if(val == '4'){
+//       document.getElementById('one').style.display = 'block';
+//       document.getElementById('two').style.display = 'block';
+//       document.getElementById('Three').style.display = 'block';
+//       document.getElementById('Four').style.display = 'block';
+//     }
+//   }
+
+    </script>
+</body>
+
+</html>
